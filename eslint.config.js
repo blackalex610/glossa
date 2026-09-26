@@ -27,7 +27,7 @@ export default tseslint.config(
       ...reactHooks.configs.recommended.rules,
       'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
       '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
-      // Layering rule (docs/architecture/v2-plan.md §G): components only reach the
+      // Layering rule: components only reach the
       // API through hooks/, never api/ directly.
       'no-restricted-imports': [
         'error',
